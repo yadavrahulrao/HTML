@@ -1,0 +1,31 @@
+#navlist{
+  list-style: none;
+  
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  margin-left:15px ;
+  margin-right: 15px;
+}
+
+.navcontainer{
+  width: 100vw;
+  background-color: rgb(174, 181, 211);
+}
+
+.container{
+  height: 100vh;
+  width: 100vw;
+  overflow-x:none;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#navlogo{
+  font-size: 2.5rem;
+}

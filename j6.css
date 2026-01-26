@@ -1,0 +1,13 @@
+/* h1{
+  color: blue;
+} */
+
+
+.box{
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  text-align: center;
+  background-color: cornflowerblue;
+  margin: 40px;
+}

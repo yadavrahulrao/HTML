@@ -74,20 +74,75 @@
 // };
 
 
-const getPromise = ()=>{
-   return new Promise((resolve, reject) => {
-    console.log("promise");
-    // resolve("sucess");
+// const getPromise = ()=>{
+//    return new Promise((resolve, reject) => {
+//     console.log("promise");
+//     // resolve("sucess");
 
-    reject("error");
+//     reject("error");
+//   });
+// };
+
+// let promise = getPromise();
+// promise.then(()=>{
+//   console.log("fullfilled");
+// });
+
+// promise.catch(()=>{
+//   console.log("reject");
+// });
+
+
+
+
+// promise chaining
+
+// function asyncFunc(){
+//   return new Promise((resolve,reject) => {
+//     setTimeout(()=> {
+//       console.log("some data");
+//       resolve("success");
+//     },2000);
+//   });
+// }
+
+// function asyncFunc2(){
+//   return new Promise((resolve,reject) => {
+//     setTimeout(()=> {
+//       console.log("some data");
+//       resolve("success");
+//     },2000);
+//   });
+// }
+
+// console.log("fetching data 1...")
+// asyncFunc().then((res) => {
+//   console.log("fetching data 2 ...");
+//   asyncFunc2().then((res) => {
+
+//   });
+// });
+
+
+// async function hello(){
+//   console.log("hello");
+// };
+
+
+
+// async await
+function api(){
+  return new Promise((resolve,reject) => {
+    setTimeout(() => {
+      console.log("some data");
+      resolve(200);
+
+    },2000);
   });
 };
 
-let promise = getPromise();
-promise.then(()=>{
-  console.log("fullfilled");
-});
+async function getdata() {
+  await api();
+}
 
-promise.catch(()=>{
-  console.log("reject");
-});
+
